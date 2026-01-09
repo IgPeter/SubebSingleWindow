@@ -1,0 +1,58 @@
+.about-subeb {
+  background: #f4f6f8;
+  padding: 80px 5px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #722f37;
+}
+
+.about-intro {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.about-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.about-card h3 {
+  margin-bottom: 12px;
+  color: #722f37;
+}
+
+.about-card p,
+.about-card li {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-card ul {
+  padding-left: 18px;
+}

@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+}
+/* End General Styles */
+
+/* ------------------------------------------------------------------------ */
+/* Main Layout */
+
+.main-layout {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.top-bar {
+  background: #722f37;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+}
+
+/* Left Menu */
+.left-menu {
+  width: "40%";
+  border: 2px solid #2f6f9f;
+  background: #2f6f9f;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.left-menu span {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+}
+
+/* End Main Layout */
+/* ------------------------------------------------------------------------ */
+
+/* Main UI */
+.container {
+  display: flex;
+  height: "100%;";
+  overflow-y: auto;
+}
+
+.left-sidebar {
+  width: 30%;
+  min-height: 100vh;
+  border: 2px solid #2f6f9f;
+  background: #2f6f9f; /* wine color */
+  color: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.first-content h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.first-content p {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+/* RIGHT SIDE */
+.app-list-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 8px;
+}
+
+.app-item {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.app-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-family: "poppins", sans-serif;
+}
+
+.app-item p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+.content {
+  width: 67%;
+  overflow-y: auto;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+  margin: 2.5rem auto;
+  border: 2px solid #fff;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 1.5rem;
+  font-family: "poppins", sans-serif;
+  color: #722f37;
+}
+
+.content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.open-button {
+  background: #722f37;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
