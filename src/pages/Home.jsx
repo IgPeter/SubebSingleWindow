@@ -1,6 +1,6 @@
 // pages/Home.jsx
 import React from "react";
-import MainLayout from "../components/Layout/MainLayout";
+import MainLayout from "../components/layout/MainLayout";
 import MainUi from "../components/ui/MainUi";
 import Footer from "../components/ui/footer"; // Adjust path if needed
 import SportingActivity from "../components/ui/SportActivity";
