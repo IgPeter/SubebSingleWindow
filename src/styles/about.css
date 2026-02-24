@@ -1,58 +1,77 @@
+/* about.css */
+
+/* ─── About Section ──────────────────────────────────────── */
+
 .about-subeb {
-  background: #f4f6f8;
-  padding: 80px 5px;
+  width: 100%;
+  padding: 3rem 1rem 1.5rem 1.5rem;
+  background: var(--subeb-light);
+  color: #2d3748;
 }
 
 .about-container {
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-.about-container h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #722f37;
+.about-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 5rem;
+}
+
+.about-header h2 {
+  color: var(--subeb-primary);
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.6px;
 }
 
 .about-intro {
-  font-size: 18px;
-  max-width: 800px;
-  margin: 0 auto 50px auto;
-  color: #444;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: var(--subeb-accent);
+  font-weight: 400;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+/* Responsive: collapse to single column on smaller screens */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr); /* two columns on tablet */
+  }
 }
 
-.about-card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 24px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+@media (max-width: 768px) {
+  .about-subeb {
+    padding: 4.5rem 1rem 4rem;
+  }
+
+  .about-header h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-intro {
+    font-size: 1.15rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr; /* one column on mobile */
+    gap: 1.8rem;
+  }
+
+  .about-card {
+    padding: 2rem 1.6rem;
+  }
 }
 
-.about-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
+@media (max-width: 480px) {
+  .about-header h2 {
+    font-size: 2.1rem;
+  }
 
-.about-card h3 {
-  margin-bottom: 12px;
-  color: #722f37;
-}
-
-.about-card p,
-.about-card li {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.about-card ul {
-  padding-left: 18px;
+  .card-icon {
+    font-size: 3rem;
+  }
 }
