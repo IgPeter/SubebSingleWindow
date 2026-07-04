@@ -2,28 +2,46 @@
 import React from "react";
 import dletterImg from "../../assets/images/dletter.png";
 import cdImage from "../../assets/images/cd_subeb.png";
-import comingSoonImg from "../../assets/images/coming_soon.png";
 import AboutUs from "../../pages/About"; // keep or move to route later
 import bglessLogo from "../../assets/images/bgless-subeb-logo.png";
 import slideImage1 from "../../assets/images/subeb_act_hero.png";
 import slideImage2 from "../../assets/images/subeb_efficient_teacher_deployment.png";
+import screeningAppImage from "../../assets/images/screeningappimage.png";
+import employmentLetterAppImage from "../../assets/images/employmentletterappimage.png";
+import bsimsAppImage from "../../assets/images/bsimsimage.png";
 
 const apps = [
   {
     id: 1,
+    name: "Screening Application",
+    description:
+      "Screen staffs faster and efficiently for employment. This apps ensures the eligibility of staffs",
+    image: screeningAppImage,
+    link: "https://screening.benuesubeb.org",
+  },
+  {
+    id: 2,
+    name: "Employment Letter Generator",
+    description:
+      "Generate and print employment letters for teachers with precision and efficiency.",
+    image: employmentLetterAppImage,
+    link: "https://bselg.benuesubeb.org",
+  },
+  {
+    id: 3,
     name: "Deployment Letter Generator",
     description:
       "Generate and print deployment letters for teachers with precision and efficiency.",
     image: dletterImg,
-    link: "https://your-deployment-app-link.com",
+    link: "https://bsdlg.benuesubeb.org",
   },
   {
-    id: 2,
+    id: 4,
     name: "Data Capture Tool",
     description:
       "Capture school, staff, and facility data digitally for seamless management and insights.",
     image: cdImage,
-    link: "https://your-data-capture-link.com",
+    link: "https://bsdc.benuesubeb.org",
   },
   ,
   /*{
@@ -34,12 +52,12 @@ const apps = [
     image: comingSoonImg,
     link: "https://your-attendance-link.co",
   }*/ {
-    id: 4,
-    name: "SUBEB Information Management System",
+    id: 5,
+    name: "SCHOOL DATA APPLICATION",
     description:
       "Centralize and manage all SUBEB operations information for enhanced decision-making and transparency.",
-    image: comingSoonImg,
-    link: "https://your-sims-link.com",
+    image: bsimsAppImage,
+    link: "https://bsims.benuesubeb.org",
   },
   // Easily add more:
   // { id: 5, name: "...", description: "...", image: ..., link: "..." },
@@ -71,12 +89,11 @@ function MainUi() {
         {/* Overlay wrapper – centers everything */}
         <div className="hero-overlay">
           <div className="hero-content">
-            <h1 className="hero-title">SUBEB Single Window</h1>
+            <h1 className="hero-title">WELOME TO BBEMIS</h1>
 
             <div className="hero-main-row">
               <p className="hero-subtitle">
-                Your secure, unified access point to powerful digital tools
-                transforming basic education across Benue State.
+                Benue State Basic Education Management Information System
               </p>
             </div>
           </div>

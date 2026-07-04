@@ -121,13 +121,13 @@ function Footer() {
             Government
           </p>
 
-          <div className="footer-legal-links">
+          {/*<div className="footer-legal-links">
             <a href="#">Privacy Policy</a>
             <span className="separator">•</span>
             <a href="#">Terms of Use</a>
             <span className="separator">•</span>
             <a href="#">Accessibility Statement</a>
-          </div>
+          </div>*/}
         </div>
       </div>
     </footer>
