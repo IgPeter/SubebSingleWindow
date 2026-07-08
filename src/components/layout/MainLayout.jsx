@@ -366,6 +366,27 @@ function MainLayout({ children }) {
                     Budget Planning
                   </Link>
                   <Link
+                    to="/hope-edu/report-approval"
+                    onClick={() => setActiveDropdown(null)}
+                    className="block px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Report Approval
+                  </Link>
+                   <Link
+                    to="/hope-edu/school-reports"
+                    onClick={() => setActiveDropdown(null)}
+                    className="block px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    School Reports
+                  </Link>
+                  <Link
+                    to="/hope-edu/teacher-assessment"
+                    onClick={() => setActiveDropdown(null)}
+                    className="block px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    Teacher Assessment Report
+                  </Link>
+                  <Link
                     to="/hope-edu/analytics"
                     onClick={() => setActiveDropdown(null)}
                     className="block px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"

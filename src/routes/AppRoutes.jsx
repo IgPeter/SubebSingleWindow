@@ -7,6 +7,7 @@ import SummaryPage from "../components/sports/SummaryPage";
 import RegistrationLookup from "../components/sports/RegistrationLookup";
 import SportsAdminDashboard from "../components/sports/SportsAdminDashboard";
 import SignIn from "../pages/auth/signin";
+import TeacherAssessmentPage from "../pages/hopeEdu/TeacherAssessmentPage";
 
 export default function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ export default function AppRoutes() {
       {/* Public route */}
       <Route path="/home" element={<Home />} />
       <Route path="/login" element={<SignIn />} />
+      <Route path="/hope-edu/teacher-assessment" element={<TeacherAssessmentPage />} />
 
       {/* Redirect root to login */}
       <Route path="/" element={<Navigate to="/home" />} />

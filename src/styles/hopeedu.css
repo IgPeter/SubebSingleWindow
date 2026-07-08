@@ -1,0 +1,112 @@
+.hopeedu-page {
+  min-height: calc(100vh - 80px);
+  padding: 2.5rem 1.25rem 3.5rem;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef7ff 100%);
+  color: #0f172a;
+}
+
+.hopeedu-hero {
+  max-width: 1120px;
+  margin: 0 auto 1.5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+.hopeedu-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  margin-bottom: 0.9rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hopeedu-hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+  font-weight: 800;
+  color: #0c4a6e;
+}
+
+.hopeedu-hero p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.hopeedu-report-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.hopeedu-table-wrap {
+  overflow-x: auto;
+}
+
+.hopeedu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.hopeedu-table td {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #e2e8f0;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.hopeedu-table tr:nth-child(odd) {
+  background-color: #f8fafc;
+}
+
+.hopeedu-table tr:first-child td {
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.hopeedu-state {
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background: #f8fbff;
+  color: #334155;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hopeedu-state-error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .hopeedu-page {
+    padding: 1.25rem 0.75rem 2rem;
+  }
+
+  .hopeedu-hero,
+  .hopeedu-report-shell {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .hopeedu-table td {
+    padding: 0.6rem 0.65rem;
+    font-size: 0.88rem;
+  }
+}
