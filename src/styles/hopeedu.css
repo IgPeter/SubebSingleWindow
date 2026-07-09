@@ -53,8 +53,560 @@
   border: 1px solid rgba(148, 163, 184, 0.2);
 }
 
+.hopeedu-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.hopeedu-file-meta {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hopeedu-file-meta-secondary {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #475569;
+}
+
+.hopeedu-action-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hopeedu-action-button {
+  appearance: none;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 0.95rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.85rem 1.15rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.hopeedu-action-button:hover,
+.hopeedu-action-button:focus-visible {
+  background: #dbeafe;
+  border-color: rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.hopeedu-view-button {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.hopeedu-download-button {
+  background: #effaf6;
+  color: #047857;
+  border-color: rgba(4, 120, 87, 0.2);
+}
+
+.hopeedu-file-note {
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.hopeedu-table-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hopeedu-table-summary {
+  font-size: 0.95rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.hopeedu-pagination-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.hopeedu-pagination-info {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.hopeedu-pagination-button {
+  appearance: none;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  border-radius: 0.85rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.hopeedu-pagination-button:hover:not(:disabled),
+.hopeedu-pagination-button:focus-visible {
+  background: #dbeafe;
+  border-color: rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.hopeedu-pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hopeedu-pdf-panel {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  min-height: 50rem;
+  display: grid;
+}
+
+.hopeedu-pdf-preview {
+  width: 100%;
+  min-height: 50rem;
+  border: 0;
+}
+
 .hopeedu-table-wrap {
   overflow-x: auto;
+}
+
+.hopeedu-sheet-preview-shell {
+  margin-top: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.hopeedu-sheet-preview-hint {
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.hopeedu-sheet-html-wrap {
+  overflow-x: auto;
+  padding: 0.75rem;
+}
+
+.hopeedu-sheet-html-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #ffffff;
+}
+
+.hopeedu-sheet-html-wrap td,
+.hopeedu-sheet-html-wrap th {
+  border: 1px solid #e2e8f0;
+  padding: 0.45rem 0.55rem;
+  min-width: 100px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.hopeedu-sheet-html-wrap th {
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.hopeedu-sheet-html-wrap tr:nth-child(odd) td {
+  background-color: #fcfdff;
+}
+
+.hopeedu-folder-card {
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  background: #eff6ff;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.hopeedu-hero-subtitle {
+  margin: 0.75rem 0 0;
+  color: #475569;
+  max-width: 900px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.hopeedu-folder-header {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.hopeedu-folder-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hopeedu-folder-header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 1.4rem;
+}
+
+.hopeedu-folder-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.hopeedu-folder-description {
+  margin: 0.45rem 0 0;
+  color: #334155;
+  max-width: 780px;
+  line-height: 1.6;
+}
+
+.hopeedu-folder-toggle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0c4a6e;
+}
+
+.hopeedu-folder-list {
+  border-top: 1px solid rgba(59, 130, 246, 0.16);
+}
+
+.hopeedu-folder-row {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.hopeedu-folder-row:hover,
+.hopeedu-folder-row:focus-visible {
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateY(-1px);
+}
+
+.hopeedu-folder-row.active {
+  background: #dbeafe;
+}
+
+.hopeedu-folder-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.95rem;
+  background: #e0f2fe;
+  color: #1d4ed8;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+.hopeedu-folder-row-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hopeedu-folder-row-note {
+  margin: 0.35rem 0 0;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.hopeedu-folder-row-action {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.hopeedu-report-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+.hopeedu-report-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.hopeedu-report-card:hover,
+.hopeedu-report-card:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+.hopeedu-report-card.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.hopeedu-report-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hopeedu-report-card-note {
+  margin: 0.3rem 0 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.hopeedu-budget-panel {
+  margin-top: 1.5rem;
+  padding: 1.75rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.hopeedu-budget-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hopeedu-budget-copy {
+  max-width: 72%;
+}
+
+.hopeedu-budget-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hopeedu-budget-description {
+  margin: 0.75rem 0 0;
+  color: #475569;
+  line-height: 1.75;
+  max-width: 860px;
+}
+
+.hopeedu-budget-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  text-decoration: none;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.hopeedu-budget-download:hover {
+  background: #dbeafe;
+  transform: translateY(-1px);
+}
+
+.hopeedu-table-grid-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.hopeedu-column-pagination {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hopeedu-column-note {
+  margin: 0;
+  color: #475569;
+  font-size: 0.92rem;
+}
+
+.hopeedu-column-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.hopeedu-column-button,
+.hopeedu-pagination-button {
+  padding: 0.65rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: #ffffff;
+  color: #334155;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.hopeedu-column-button:hover,
+.hopeedu-pagination-button:hover {
+  background: #eff6ff;
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.hopeedu-column-button:disabled,
+.hopeedu-pagination-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.hopeedu-file-panel {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.hopeedu-file-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hopeedu-file-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.hopeedu-sheet-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.hopeedu-sheet-tab {
+  appearance: none;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #334155;
+  padding: 0.65rem 1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.hopeedu-sheet-tab.active {
+  background: #1d4ed8;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.hopeedu-sheet-notes {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.hopeedu-sheet-notes-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hopeedu-sheet-notes p {
+  margin: 0 0 0.75rem;
+  color: #475569;
+  line-height: 1.75;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.hopeedu-table-title {
+  margin: 0 0 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hopeedu-folder-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hopeedu-file-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hopeedu-action-group {
+    width: 100%;
+  }
 }
 
 .hopeedu-table {
@@ -63,11 +615,19 @@
   font-size: 0.95rem;
 }
 
+.hopeedu-table th,
 .hopeedu-table td {
-  padding: 0.7rem 0.8rem;
+  padding: 0.85rem 1rem;
   border: 1px solid #e2e8f0;
   white-space: nowrap;
   vertical-align: top;
+}
+
+.hopeedu-table th:nth-last-child(-n+3),
+.hopeedu-table td:nth-last-child(-n+3) {
+  padding-left: 1.5rem;
+  padding-right: 1.3rem;
+  min-width: 6rem;
 }
 
 .hopeedu-table tr:nth-child(odd) {

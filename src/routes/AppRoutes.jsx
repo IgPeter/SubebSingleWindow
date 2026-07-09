@@ -7,7 +7,10 @@ import SummaryPage from "../components/sports/SummaryPage";
 import RegistrationLookup from "../components/sports/RegistrationLookup";
 import SportsAdminDashboard from "../components/sports/SportsAdminDashboard";
 import SignIn from "../pages/auth/signin";
+import ReportApproval from "../pages/hopeEdu/ReportApproval";
 import TeacherAssessmentPage from "../pages/hopeEdu/TeacherAssessmentPage";
+import SchoolReport from "../pages/hopeEdu/SchoolReport";
+import Budgetting from "../pages/hopeEdu/Budgetting";
 
 export default function AppRoutes() {
   return (
@@ -15,6 +18,9 @@ export default function AppRoutes() {
       {/* Public route */}
       <Route path="/home" element={<Home />} />
       <Route path="/login" element={<SignIn />} />
+      <Route path="/hope-edu/report-approval" element={<ReportApproval />} />
+      <Route path="/hope-edu/budget" element={<Budgetting />} />
+      <Route path="/hope-edu/school-reports" element={<SchoolReport />} />
       <Route path="/hope-edu/teacher-assessment" element={<TeacherAssessmentPage />} />
 
       {/* Redirect root to login */}
